@@ -2,7 +2,7 @@ import os
 
 from sqlmodel import SQLModel, Session, create_engine
 
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///resturantreview.db")
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///cinema_review.db")
 ECHO_SQL = os.getenv("ECHO_SQL", "false").lower() == "true"
 engine = create_engine(DATABASE_URL, echo=ECHO_SQL)
 # echo shows sql query directly in the terminal when ECHO_SQL=true
