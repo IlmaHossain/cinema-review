@@ -10,12 +10,12 @@ async def lifespan(app: FastAPI):
     print("Database tables created")
     yield
 #     shutdown : cleanup here
-    print("Shutting down the app ")
+    print("Shutting down the app")
 
 app = FastAPI(
     title="Cineplax Review API",
     version="1.0",
-    description="Theater Reviews Api for Cineplax",
+    description="Review Api for Cineplax",
     lifespan=lifespan
 )
 app.include_router(reviews_router)
