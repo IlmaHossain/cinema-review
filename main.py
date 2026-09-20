@@ -21,4 +21,4 @@ app = FastAPI(
 app.include_router(reviews_router)
 @app.get("/")
 async def root():
-    return {"message": "Welcome to Cineplax Review Api"}
+    return {"message": "Welcome to CinePlax Review Api"}
